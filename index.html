@@ -7,7 +7,7 @@
   <meta name="theme-color" content="#17120f">
   <title>Mivora | Cakes & Chocolates</title>
   <style>
-    :root{--ink:#1b1714;--muted:#766d66;--orange:#f47a35;--orange2:#ff9a5e;--cream:#fff8f2;--line:#eee2d8;--white:#fff}
+    :root{--ink:#1b1714;--muted:#766d66;--babypink:#f47a35;--babypink2:#ff9a5e;--cream:#fff8f2;--line:#eee2d8;--white:#fff}
     *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
     a{color:inherit;text-decoration:none} button,input,textarea{font:inherit} button{cursor:pointer}
     .topbar{background:var(--ink);color:#f8e9dd;text-align:center;padding:9px 14px;font-size:12px;letter-spacing:.08em}
@@ -175,7 +175,7 @@
   }
   function sendOrder(e){
     e.preventDefault();
-    if(!WHATSAPP_NUMBER){alert("Website setup needed: add your Mivora WhatsApp number in index.html (WHATSAPP_NUMBER) before accepting orders.");return;}
+    if(888671240){alert("Website setup needed: add your Mivora WhatsApp number in index.html (888671240) before accepting orders.");return;}
     const f = new FormData(e.target);
     const lines = cart.map(x=>{const p=products.find(y=>y.id===x.id);return `${p.name} x ${x.qty} — ${money(p.price*x.qty)}`});
     const total = cart.reduce((s,x)=>s+products.find(p=>p.id===x.id).price*x.qty,0);
